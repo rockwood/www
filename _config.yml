@@ -1,18 +1,17 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+title: 'Kevin Rockwood'
+description: 'developer'
+url: 'http://rockwood.me'
+baseurl: '/'
+google_analytics: 'UA-24458949-2'
+disqus_shortname: 'rockwood'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Kevin Rockwood'
+  email: kevin@rockwood.me
+  twitter_username: kevinrockwood
+  github_username: rockwood
+  linkedin_username: rockwood
 
 defaults:
   -
