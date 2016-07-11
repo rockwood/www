@@ -1,11 +1,13 @@
 ---
 title: "Concurrent Feature Tests with Phoenix and Hound"
 date: 2016-07-11 09:00:00
-categories: [Elixir, Phoenix, Testing]
+categories: [Elixir]
+tags: [Elixir, Phoenix, Ecto, Hound, Testing]
 ---
 
 With the release of Phoenix 1.2 and Ecto 2.0, we now have the ability run automated browser tests
-concurrently, even ones that that hit the database!
+concurrently, even ones that that hit the database! I recently spent a couple hours getting this
+setup on a project so hopefully documenting everything here will save others some time.
 
 We'll be using [Hound](https://github.com/HashNuke/hound) for this example, but the setup should be
 similar for any automated browser tool.
