@@ -25,13 +25,13 @@ available such including [chromedriver](https://sites.google.com/a/chromium.org/
 [phantomjs](http://phantomjs.org/). See the [Hound readme](https://hexdocs.pm/hound/readme.html)
 for details.
 
-First, install the driver. Here, I'm using homebrew
+First, install the driver.
 
 ```sh
 > brew install selenium-server-standalone
 ```
 
-Then, start the selenium-server daemon. Hound doesn't start webdriver servers itself, so you'll need
+Then start the selenium-server daemon. Hound doesn't start webdriver servers itself, so you'll need
 to manage that. Selenium installed via homebrew registers itself as a service.
 
 ```sh
@@ -59,7 +59,7 @@ config :your_app, YourApp.Endpoint,
 
 ## Step 4: Add the Ecto Sandbox Plug
 
-[phoenix_ecto](https://github.com/phoenixframework/phoenix_ecto)) ships with a plug to dynamically
+[phoenix_ecto](https://github.com/phoenixframework/phoenix_ecto) ships with a plug to dynamically
 switch database transactions for each request, allowing multiple browsers to talk to the same
 database concurrently.
 
@@ -71,7 +71,7 @@ First, set a flag to enable the sandbox plug in your test config:
 config :your_app, sql_sandbox: true
 ```
 
-Then use the flag to conditionally add add it your endpoint during acceptance tests.
+Then use the flag to conditionally add add it your endpoint during feature tests.
 
 **IMPORTANT:** The order of plugs matters, and this one must be listed before any others.
 
@@ -93,8 +93,8 @@ end
 
 We need to define an ExUnit case file to be used by each feature test.
 
-For concurrent tests, ones with `async: true`, we need to checkout a
-sandboxed database connection and pass it to Hound.
+For concurrent tests (ones with `async: true`) we need to checkout a sandboxed database connection
+and pass it to Hound.
 
 ```elixir
 # test/support/feature_case.ex
@@ -138,6 +138,6 @@ checking out the following:
   * [Ecto Sandbox Adapter](https://hexdocs.pm/ecto/Ecto.Adapters.SQL.Sandbox.html)
   * [DB Connection](https://hexdocs.pm/db_connection/DBConnection.html)
 
-**A note on terminology:** I use the term _feature tests_ to mean an automated test that drives a
-browser through the application. Some prefer the term _end-to-end tests_, _acceptance tests_ or
-_integration tests_. For most people, these terms are used interchanably.
+**A note on terminology:** I use the term _feature test_ to mean an automated test that drives a
+browser through the application. Some prefer the terms _end-to-end test_, _acceptance test_ or
+_integration test_. For most purposes, these terms are used interchanably.
