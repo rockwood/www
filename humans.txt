@@ -1,14 +1,14 @@
 /* TEAM */
-Developer & Designer: Josh Gerdes
-Twitter: @joshgerdes
-Site: http://joshgerdes.com
-Location: Minneapolis, MN, USA
+Developer & Designer: Kevin Rockwood
+Twitter: @rockwood
+Site: http://rockwood.me
+Location: Seoul, Korea
 						
 /* THANKS */
+Name: Josh Gerdes
 Name: Dale Anthony
 
 /* SITE */
-Last update: 2016/02/10
+Last update: 2016/07/15
 Standards: HTML5, CSS3
 Components: Jekyll
-Software: Sublime Text, Photoshop
