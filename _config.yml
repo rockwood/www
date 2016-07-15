@@ -34,5 +34,8 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
+sass:
+  style: compressed
+
 gems: ['jekyll-paginate']
 exclude: ['vendor', 'README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
