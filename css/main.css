@@ -6,11 +6,12 @@
 pre.highlight,
 .highlight pre {
   padding: 10px;
+  overflow-y: auto;
 }
 
 pre.highlight code,
 .highlight pre code {
-  white-space: pre-wrap;
+  white-space: pre;
 }
 
 .btn, 
