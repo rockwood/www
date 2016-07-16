@@ -1,7 +1,7 @@
 ---
 title: "Concurrent Feature Tests with Phoenix and Hound"
 date: 2016-07-11 09:00:00
-categories: [Elixir]
+categories: Elixir
 tags: [Elixir, Phoenix, Ecto, Hound, Testing]
 ---
 
