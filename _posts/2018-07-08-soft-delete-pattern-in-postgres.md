@@ -1,3 +1,10 @@
+---
+title: "Soft-Delete Pattern In Postgres"
+date: 2018-07-08 09:00:00
+categories: Postgresql
+tags: [SQL]
+---
+
 You're building a application on a Postgres database. At some point, you'll be faced with the
 question:
 
@@ -54,7 +61,7 @@ CREATE VIEW combined.posts AS
 Let's add two rows to our `posts` table. 
 
 ```
-SELECT * FROM Posts;
+SELECT * FROM posts;
 
  id |     title      |        body
 ----+----------------+---------------------
